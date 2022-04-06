@@ -1,0 +1,27 @@
+/*
+*Creare una funzione che restituisce se un numero intero è naturale o meno.
+*/
+#include <iostream>
+
+using namespace std;
+
+void controllo(int a)
+{
+	if (a > 0)
+	{
+		cout << "Il numero e' naturale" << endl;
+	}
+	else
+	{
+		cout << "Il numero non e' naturale" << endl;
+	}
+}
+
+int main()
+{
+	int N;
+	cout << "Inserisci un numero:";
+	cin >> N;
+	controllo(N);
+	system("PAUSE");
+}
