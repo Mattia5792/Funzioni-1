@@ -1,0 +1,23 @@
+/*
+*Creare una funzione che calcola e restituisce il valore assoluto di un numero intero.
+*/
+#include <iostream>
+
+using namespace std;
+
+void assoluto(int a)
+{
+	if (a < 0)
+	{
+		a = a * (-1);
+	}
+	cout << a;
+}
+
+int main()
+{
+	int N;
+	cout << "Inserisci un numero:";
+	cin >> N;
+	assoluto(N);
+}
