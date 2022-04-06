@@ -1,0 +1,54 @@
+/*
+* Creare una funzione che riceve tre numeri interi e restituisce la differenza tra il più grande e il più piccolo.
+*/
+#include <iostream>
+
+using namespace std;
+
+void differenza(int a, int b, int c)
+{
+	int valoreminimo = 0;
+	int valoremassimo = 0;
+
+	if (a < b && a < c)
+	{
+		valoreminimo = a;
+	}
+	if (a > b && a > c)
+	{
+		valoremassimo = a;
+	}
+	if (b < a && b < c)
+	{
+		valoreminimo = b;
+	}
+	if (b > a && b > c)
+	{
+		valoremassimo = b;
+	}
+	if (c < a && c < b)
+	{
+		valoreminimo = c;
+	}
+	if (c > a && c > b)
+	{
+		valoremassimo = c;
+	}
+	cout << valoremassimo - valoreminimo << endl;
+}
+
+int main()
+{
+	int numero1;
+	int numero2;
+	int numero3;
+	
+	cout << "Inserisci il primo numero:";
+	cin >> numero1;
+	cout << "Inserisci il secondo numero:";
+	cin >> numero2;
+	cout << "Inserisci il terzo numero:";
+	cin >> numero3;
+	differenza(numero1, numero2, numero3);
+	system("PAUSE");
+}
