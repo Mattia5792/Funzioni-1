@@ -20,4 +20,5 @@ int main()
 	cout << "Inserisci un numero:";
 	cin >> N;
 	assoluto(N);
+	system("PAUSE");
 }
