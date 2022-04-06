@@ -1,0 +1,41 @@
+/*
+*Creare una funzione che restituisce se un numero intero ha almeno 3 divisori.
+*/
+#include <iostream>
+
+using namespace std;
+
+int contadivisori(int a)
+{
+	int divisori = 0;
+
+	for (int i = 1; i < a; i++)
+	{
+		if (a % i == 0)
+		{
+			divisori = divisori++;
+		}
+	}
+	return divisori;
+}
+
+int main()
+{
+	int numero;
+
+	cout << "Inserisci un numero:";
+	cin >> numero;
+	if (contadivisori(numero) == 3)
+	{
+		cout << "Il numero ha tre divisori" << endl;
+	}
+	if (contadivisori(numero) > 3)
+	{
+		cout << "Il numero ha piu' di tre divisori" << endl;
+	}
+	if (contadivisori(numero) < 3)
+	{
+		cout << "Il numero ha meno di tre divisori" << endl;
+	}
+	system("PAUSE");
+}
