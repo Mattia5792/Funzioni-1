@@ -1,0 +1,49 @@
+/*
+* Creare una funzione che dice se un carattere è una vocale.
+*/
+#include <iostream>
+
+using namespace std;
+
+bool vocali(char a)
+{
+	if (a == 'A' or a == 'a')
+	{
+		cout << "Il carattere e' una vocale" << endl;
+		return true;
+	}
+	if (a == 'E' or a == 'e')
+	{
+		cout << "Il carattere e' una vocale" << endl;
+		return true;
+	}
+	if (a == 'I' or a == 'i')
+	{
+		cout << "Il carattere e' una vocale" << endl;
+		return true;
+	}
+	if (a == 'O' or a == 'o')
+	{
+		cout << "Il carattere e' una vocale" << endl;
+		return true;
+	}
+	if (a == 'U' or a == 'u')
+	{
+		cout << "Il carattere e' una vocale" << endl;
+		return true;
+	}
+	return false;
+}
+
+int main()
+{
+	char carattere;
+
+	cout << "Inserisci un carattere:";
+	cin >> carattere;
+	if (vocali(carattere) == false)
+	{
+		cout << "Il carattere non e' una vocale" << endl;
+	}
+	system("PAUSE");
+}
