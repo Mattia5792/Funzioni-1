@@ -1,0 +1,27 @@
+/*
+* Creare un programma che dato un carattere in ingresso verifica se è maiuscolo (Suggerimento: controllare la tabella ASCII)
+*/
+#include <iostream>
+
+using namespace std;
+
+void controllo(char a)
+{
+	if (a > 65 && a <= 90)
+	{
+		cout << "Il carattere e' maiuscolo." << endl;
+	}
+	else
+	{
+		cout << "Il carattere non e' maiuscolo." << endl;
+	}
+}
+
+int main()
+{
+	char carattere;
+	cout << "Inserisci un carattere:";
+	cin >> carattere;
+	controllo(carattere);
+	system("PAUSE");
+}
