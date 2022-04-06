@@ -1,0 +1,22 @@
+/*
+* Creare una funzione che calcola il cubo di un numero.
+*/
+#include <iostream>
+
+using namespace std;
+
+void cubo(int a)
+{
+	a = a * a * a;
+	cout << a << endl;
+}
+
+int main()
+{
+	int N;
+
+	cout << "Inserisci un numero:";
+	cin >> N;
+	cubo(N);
+	system("PAUSE");
+}
