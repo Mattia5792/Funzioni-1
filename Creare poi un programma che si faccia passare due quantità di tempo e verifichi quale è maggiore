@@ -1,0 +1,43 @@
+/*
+*Creare poi un programma che si faccia passare due quantità di tempo e verifichi quale è maggiore
+*/
+#include <iostream>
+
+using namespace std;
+
+int contosecondi(int a, int b, int c)
+{
+	int d;
+	cout << "Inserisci le ore:";
+	cin >> a;
+	cout << "Inserisci i minuti:";
+	cin >> b;
+	cout << "Inserisci i secondi:";
+	cin >> c;
+	a = a * 3600;
+	b = b * 60;
+	d = a + b + c;
+	return d;
+}
+
+int main()
+{
+	int seconditotali1 = 0;
+	int seconditotali2 = 0;
+	int ore = 0;
+	int minuti = 0;
+	int secondi = 0;
+	cout << "Inserisci il primo orario" << endl;
+	seconditotali1 = contosecondi(ore, minuti, secondi);
+	cout << "Inserisci il secondo orario" << endl;
+	seconditotali2 = contosecondi(ore, minuti, secondi);
+	if (seconditotali1 > seconditotali2)
+	{
+		cout << "Il primo orario digitato e' maggiore del secondo" << endl;
+	}
+	else
+	{
+		cout << "Il secondo orario digitato e' maggiore del primo" << endl;
+	}
+	system("PAUSE");
+}
