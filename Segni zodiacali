@@ -1,0 +1,162 @@
+/*
+*Inserendo il proprio giorno e mese di nascita, comunica il segno zodiacale corrispondente alla data inserita.
+*/
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void segnozodiacale(int a, string b)
+{
+	if (b == "Gennaio")
+	{
+		if (a <= 20)
+		{
+			cout << "Il segno e' capricorno" << endl;
+		}
+		if (a >= 21)
+		{
+			cout << "Il segno e' acquario" << endl;
+		}
+	}
+	if (b == "Febbraio")
+	{
+		if (a <= 19)
+		{
+			cout << "Il segno e' acquario" << endl;
+		}
+		if (a >= 20)
+		{
+			cout << "Il segno e' pesci" << endl;
+		}
+	}
+	if (b == "Marzo")
+	{
+		if (a <= 20)
+		{
+			cout << "Il segno e' pesci" << endl;
+		}
+		if (a >= 21)
+		{
+			cout << "Il segno e' ariete" << endl;
+		}
+	}
+	if (b == "Aprile")
+	{
+		if (a <= 20)
+		{
+			cout << "Il segno e' ariete" << endl;
+		}
+		if (a >= 21)
+		{
+			cout << "Il segno e' toro" << endl;
+		}
+	}
+	if (b == "Maggio")
+	{
+		if (a <= 20)
+		{
+			cout << "Il segno e' toro" << endl;
+		}
+		if (a >= 21)
+		{
+			cout << "Il segno e' gemelli" << endl;
+		}
+	}
+	if (b == "Giugno")
+	{
+		if (a <= 21)
+		{
+			cout << "Il segno e' gemelli" << endl;
+		}
+		if (a >= 22)
+		{
+			cout << "Il segno e' cancro" << endl;
+		}
+	}
+	if (b == "Luglio")
+	{
+		if (a <= 22)
+		{
+			cout << "Il segno e' cancro" << endl;
+		}
+		if (a >= 23)
+		{
+			cout << "Il segno e' leone" << endl;
+		}
+	}
+	if (b == "Agosto")
+	{
+		if (a <= 22)
+		{
+			cout << "Il segno e' leone" << endl;
+		}
+		if (a >= 23)
+		{
+			cout << "Il segno e' vergine" << endl;
+		}
+	}
+	if (b == "Settembre")
+	{
+		if (a <= 22)
+		{
+			cout << "Il segno e' vergine" << endl;
+		}
+		if (a >= 23)
+		{
+			cout << "Il segno e' bilancia" << endl;
+		}
+	}
+	if (b == "Ottobre")
+	{
+		if (a <= 22)
+		{
+			cout << "Il segno e' bilancia" << endl;
+		}
+		if (a >= 23)
+		{
+			cout << "Il segno e' scorpione" << endl;
+		}
+	}
+	if (b == "Novembre")
+	{
+		if (a <= 22)
+		{
+			cout << "Il segno e' scorpione" << endl;
+		}
+		if (a >= 23)
+		{
+			cout << "Il segno e' sagittario" << endl;
+		}
+	}
+	if (b == "Dicembre")
+	{
+		if (a <= 21)
+		{
+			cout << "Il segno e' sagitario." << endl;
+		}
+		if (a >= 22)
+		{
+			cout << "Il segno e' capricorno" << endl;
+		}
+	}
+}
+
+int main()
+{
+	int giorno;
+	string mese;
+
+	cout << "Inserisci il giorno:";
+	cin >> giorno;
+	cout << "Inserisci il mese:";
+	cin >> mese;
+	if (giorno <= 31)
+	{
+		segnozodiacale(giorno, mese);
+	}
+	else
+	{
+		cout << "Errore." << endl;
+	}
+}
